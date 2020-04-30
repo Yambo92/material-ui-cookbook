@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { UnderstandingBreakpoints, FillingSpace, AbstractingContainersAndItems, FixedColumnLayout,ColumnDirection } from './Chapter01Grid'
 import { FixedPosition, AppBarWithButtons, ToolbarAbstraction, WithNavigation} from './Chaper02AppBars'
+import { DrawerTypes  } from './Chaper03Drawers'
 
 export const Chapter1 = () => {
     return (
@@ -26,7 +27,16 @@ export const Chapter2 = (props) => {
                 <Route path={`${match.path}/toolbarabstraction`}
                      render={props => <ToolbarAbstraction {...props} title="My Toolbar" />} />
                 <Route  component={FixedPosition} />
+
             </Switch>
         </Router>
+    )
+}
+
+export const Chapter3 = () => {
+    return (
+        <Fragment>
+            <DrawerTypes variant={'persistent'} />
+        </Fragment>
     )
 }
