@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { UnderstandingBreakpoints, FillingSpace, AbstractingContainersAndItems, FixedColumnLayout,ColumnDirection } from './Chapter01Grid'
 import { FixedPosition, AppBarWithButtons, ToolbarAbstraction, WithNavigation} from './Chaper02AppBars'
 import { DrawerTypes, DrawerItemState, DrawerItemNavigation, DrawerSections, AppBarInteraction  } from './Chaper03Drawers'
-
+import { AppBarIntegration, TabAlignment, 
+    RenderingTabsBasedOnState, AbstractingTabContent,TabNavigationWithRoutes } from './Chapter04Tabs' 
 export const Chapter1 = () => {
     return (
         <Fragment>
@@ -41,6 +42,18 @@ export const Chapter3 = () => {
             {/* <DrawerItemNavigation />  */}
             {/* <DrawerSections />   */}
             <AppBarInteraction />  
+        </Fragment>
+    )
+}
+
+export const Chapter4 = () => {
+    return (
+        <Fragment>
+            {/* <AppBarIntegration /> */}
+            {/* <TabAlignment /> */}
+            {/* <RenderingTabsBasedOnState />AbstractingTabContent */}
+            {/* <AbstractingTabContent /> */}
+            <TabNavigationWithRoutes />
         </Fragment>
     )
 }
