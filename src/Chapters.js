@@ -5,6 +5,12 @@ import { FixedPosition, AppBarWithButtons, ToolbarAbstraction, WithNavigation} f
 import { DrawerTypes, DrawerItemState, DrawerItemNavigation, DrawerSections, AppBarInteraction  } from './Chaper03Drawers'
 import { AppBarIntegration, TabAlignment, 
     RenderingTabsBasedOnState, AbstractingTabContent,TabNavigationWithRoutes } from './Chapter04Tabs' 
+
+import { StatefulExpansionPanels,
+    ScrollablePanelContent,
+    LazyLoadingPanelContent
+} from './Chapter05Panel'
+
 export const Chapter1 = () => {
     return (
         <Fragment>
@@ -54,6 +60,17 @@ export const Chapter4 = () => {
             {/* <RenderingTabsBasedOnState />AbstractingTabContent */}
             {/* <AbstractingTabContent /> */}
             <TabNavigationWithRoutes />
+        </Fragment>
+    )
+}
+
+export const Chapter5 = () => {
+    return (
+        <Fragment>
+            <StatefulExpansionPanels />
+            <ScrollablePanelContent />
+            <LazyLoadingPanelContent />
+
         </Fragment>
     )
 }
