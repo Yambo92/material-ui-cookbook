@@ -11,6 +11,11 @@ import { StatefulExpansionPanels,
     LazyLoadingPanelContent
 } from './Chapter05Panel'
 
+import { UsingStatetoRenderListItems,
+    ListIcons, ListAvatarsAndText,ListSections,
+     NestedLists,ListControls,ScrollingLists
+} from './Chapter06Lists'
+
 export const Chapter1 = () => {
     return (
         <Fragment>
@@ -71,6 +76,20 @@ export const Chapter5 = () => {
             <ScrollablePanelContent />
             <LazyLoadingPanelContent />
 
+        </Fragment>
+    )
+}
+
+export const Chapter6 = () => {
+    return (
+        <Fragment>
+            <UsingStatetoRenderListItems/>
+            <ListIcons/>
+            <ListAvatarsAndText/>
+            <ListSections/>
+            <NestedLists/>
+            <ListControls/>
+            <ScrollingLists/>
         </Fragment>
     )
 }
